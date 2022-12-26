@@ -117,9 +117,9 @@ else:
 def get_data():
     pipe = BartNERPipe(tokenizer=bart_name, dataset_name=dataset_name, target_type=target_type)
     if dataset_name == 'conll2003':
-        paths = {'test': "../data/conll2003/test.txt",
-                 'train': "../data/conll2003/train.txt",
-                 'dev': "../data/conll2003/dev.txt"}
+        paths = {'test': "./data/conll2003/test.txt",
+                 'train': "./data/conll2003/train.txt",
+                 'dev': "./data/conll2003/dev.txt"}
         data_bundle = pipe.process_from_file(paths, demo=demo)
     elif dataset_name == 'en-ontonotes':
         paths = '../data/en-ontonotes/english'
