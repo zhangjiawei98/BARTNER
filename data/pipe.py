@@ -569,5 +569,5 @@ def cmp(v1, v2):
 
 
 if __name__ == '__main__':
-    data_bundle = Conll2003NERLoader(demo=False).load('data/conll2003')
+    data_bundle = Conll2003NERLoader(demo=False).load('conll2003')
     BartNERPipe(target_type='word', dataset_name='conll2003').process(data_bundle)
